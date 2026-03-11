@@ -73,6 +73,12 @@ main {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
+.auth-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
 .section-header {
   margin-bottom: 1rem;
 }
@@ -107,6 +113,11 @@ main {
 
 .btn.secondary {
   background: var(--red);
+  color: var(--white);
+}
+
+.btn.muted {
+  background: #64748b;
   color: var(--white);
 }
 
