@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - FC Écrouves</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-menu">
+        <div class="top-left">
+          <a class="nav-link" href="index.html">Accueil</a>
+          <div class="logo-block">
+            <div class="logo-circle">FCE</div>
+            <strong>FC Écrouves</strong>
+          </div>
+        </div>
+        <nav class="top-center">
+          <a class="nav-link" href="infos.html">Infos club</a>
+          <a class="nav-link" href="reseaux.html">Réseaux sociaux</a>
+          <a class="nav-link" href="partenaire.html">Partenaire</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <div class="top-right">
+          <a class="icon-link" href="compte.html" title="Mon compte">👤</a>
+          <a class="icon-link" href="panier.html" title="Panier">🛍️<span class="icon-badge" id="cart-count">0</span></a>
+        </div>
+      </div>
+      <div class="hero">
+        <h1>Boutique textile</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="products-grid">
+          <article class="product" data-id="maillot-domicile" data-name="Maillot domicile" data-price="35">
+            <h3>Maillot domicile</h3><p>Taille S à XXL</p><strong>35 €</strong>
+            <button class="btn add-to-cart">Ajouter au panier</button>
+          </article>
+          <article class="product" data-id="short-entrainement" data-name="Short entraînement" data-price="22">
+            <h3>Short entraînement</h3><p>Respirant et léger</p><strong>22 €</strong>
+            <button class="btn add-to-cart">Ajouter au panier</button>
+          </article>
+          <article class="product" data-id="veste-club" data-name="Veste club" data-price="49">
+            <h3>Veste club</h3><p>Coupe-vent officielle</p><strong>49 €</strong>
+            <button class="btn add-to-cart">Ajouter au panier</button>
+          </article>
+          <article class="product" data-id="pack-chaussettes" data-name="Pack chaussettes" data-price="12">
+            <h3>Pack chaussettes</h3><p>Lot de 2 paires</p><strong>12 €</strong>
+            <button class="btn add-to-cart">Ajouter au panier</button>
+          </article>
+        </div>
+        <p id="cart-message" class="message"></p>
+      </section>
+    </main>
+
+    <footer><p>© 2026 FC Ecrouves</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
