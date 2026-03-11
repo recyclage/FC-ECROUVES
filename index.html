@@ -9,10 +9,10 @@
   <body>
     <header>
       <div class="top-menu">
-        <a href="#infos">Infos club</a>
-        <a href="#social">Réseaux sociaux</a>
-        <a href="#partenaire">Partenaire</a>
-        <a href="#contact" class="contact-link">Contact & coordonnées</a>
+        <a href="infos.html">Infos club</a>
+        <a href="reseaux.html">Réseaux sociaux</a>
+        <a href="partenaire.html">Partenaire</a>
+        <a href="contact.html" class="contact-link">Contact & coordonnées</a>
       </div>
 
       <div class="hero">
@@ -27,48 +27,53 @@
 
     <main>
       <section id="connexion" class="card">
-        <h2>Connexion</h2>
-        <form id="login-form">
+        <h2>Connexion / Inscription</h2>
+        <p id="session-state" class="message"></p>
+        <form id="auth-form" class="auth-grid">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" placeholder="nom@club.fr" required />
 
           <label for="password">Mot de passe</label>
-          <input id="password" name="password" type="password" placeholder="••••••••" required />
+          <input id="password" name="password" type="password" placeholder="6 caractères minimum" required />
 
-          <button type="submit" class="btn primary">Se connecter</button>
-          <p id="login-message" class="message"></p>
+          <div class="auth-actions">
+            <button type="submit" class="btn primary" data-mode="login">Se connecter</button>
+            <button type="submit" class="btn secondary" data-mode="register">S'inscrire</button>
+            <button type="button" id="logout" class="btn muted">Se déconnecter</button>
+          </div>
+          <p id="auth-message" class="message"></p>
         </form>
       </section>
 
       <section id="boutique" class="card">
         <div class="section-header">
           <h2>Boutique textile</h2>
-          <p>Ajoutez les articles au panier comme sur un site e-commerce.</p>
+          <p>Ajoutez les articles au panier puis payez en ligne (Stripe Checkout).</p>
         </div>
 
         <div class="products-grid">
-          <article class="product" data-name="Maillot domicile" data-price="35">
+          <article class="product" data-id="maillot-domicile" data-name="Maillot domicile" data-price="35">
             <h3>Maillot domicile</h3>
             <p>Taille S à XXL</p>
             <strong>35 €</strong>
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
 
-          <article class="product" data-name="Short entraînement" data-price="22">
+          <article class="product" data-id="short-entrainement" data-name="Short entraînement" data-price="22">
             <h3>Short entraînement</h3>
             <p>Respirant et léger</p>
             <strong>22 €</strong>
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
 
-          <article class="product" data-name="Veste club" data-price="49">
+          <article class="product" data-id="veste-club" data-name="Veste club" data-price="49">
             <h3>Veste club</h3>
             <p>Coupe-vent officielle</p>
             <strong>49 €</strong>
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
 
-          <article class="product" data-name="Pack chaussettes" data-price="12">
+          <article class="product" data-id="pack-chaussettes" data-name="Pack chaussettes" data-price="12">
             <h3>Pack chaussettes</h3>
             <p>Lot de 2 paires</p>
             <strong>12 €</strong>
@@ -81,7 +86,7 @@
         <h2>Panier</h2>
         <ul id="cart-items"></ul>
         <p class="total">Total : <span id="cart-total">0</span> €</p>
-        <button id="checkout" class="btn primary">Valider le panier</button>
+        <button id="checkout" class="btn primary">Payer la boutique</button>
         <p id="cart-message" class="message"></p>
       </section>
 
@@ -90,41 +95,6 @@
         <p>Montant annuel : <strong>120 €</strong></p>
         <button id="pay-license" class="btn secondary">Payer ma licence</button>
         <p id="license-message" class="message"></p>
-      </section>
-
-      <section id="infos" class="card info-columns">
-        <article>
-          <h3>Infos club</h3>
-          <p>
-            Entraînements : mardi et jeudi de 19h à 21h.<br />
-            Matchs à domicile : stade municipal d'Ecrouves.
-          </p>
-        </article>
-
-        <article id="social">
-          <h3>Réseaux sociaux</h3>
-          <p>
-            Instagram : @fc_ecrouves<br />
-            Facebook : FC Ecrouves Officiel
-          </p>
-        </article>
-
-        <article id="partenaire">
-          <h3>Partenaire</h3>
-          <p>
-            Espace dédié au sponsor du club.<br />
-            Exemple : Boulangerie Martin, partenaire principal.
-          </p>
-        </article>
-
-        <article id="contact">
-          <h3>Contact & coordonnées</h3>
-          <p>
-            12 rue du Stade, 54200 Écrouves<br />
-            06 00 00 00 00<br />
-            contact@fc-ecrouves.fr
-          </p>
-        </article>
       </section>
     </main>
 
