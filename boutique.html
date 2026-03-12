@@ -36,19 +36,54 @@
       <section class="card">
         <div class="products-grid">
           <article class="product" data-id="maillot-domicile" data-name="Maillot domicile" data-price="35">
-            <h3>Maillot domicile</h3><p>Taille S à XXL</p><strong>35 €</strong>
+            <h3>Maillot domicile</h3><p>Taille XS à XL</p><strong>35 €</strong>
+            <label class="size-label" for="size-maillot">Taille</label>
+            <select class="size-select" id="size-maillot">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <label class="quantity-label" for="qty-maillot">Quantité</label>
+            <input class="quantity-input" id="qty-maillot" type="number" min="1" max="20" value="1" />
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
+
           <article class="product" data-id="short-entrainement" data-name="Short entraînement" data-price="22">
             <h3>Short entraînement</h3><p>Respirant et léger</p><strong>22 €</strong>
+            <label class="size-label" for="size-short">Taille</label>
+            <select class="size-select" id="size-short">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <label class="quantity-label" for="qty-short">Quantité</label>
+            <input class="quantity-input" id="qty-short" type="number" min="1" max="20" value="1" />
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
+
           <article class="product" data-id="veste-club" data-name="Veste club" data-price="49">
             <h3>Veste club</h3><p>Coupe-vent officielle</p><strong>49 €</strong>
+            <label class="size-label" for="size-veste">Taille</label>
+            <select class="size-select" id="size-veste">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <label class="quantity-label" for="qty-veste">Quantité</label>
+            <input class="quantity-input" id="qty-veste" type="number" min="1" max="20" value="1" />
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
+
           <article class="product" data-id="pack-chaussettes" data-name="Pack chaussettes" data-price="12">
             <h3>Pack chaussettes</h3><p>Lot de 2 paires</p><strong>12 €</strong>
+            <label class="quantity-label" for="qty-chaussettes">Quantité</label>
+            <input class="quantity-input" id="qty-chaussettes" type="number" min="1" max="20" value="1" />
             <button class="btn add-to-cart">Ajouter au panier</button>
           </article>
         </div>
