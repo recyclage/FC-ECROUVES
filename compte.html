@@ -33,9 +33,13 @@
         <p id="session-state" class="message"></p>
         <form id="auth-form">
           <label for="email">Email</label>
-          <input id="email" type="email" required />
+          <input id="email" type="email" placeholder="joueur@club.fr" required />
+
           <label for="password">Mot de passe</label>
-          <input id="password" type="password" required />
+          <input id="password" type="password" minlength="6" placeholder="6 caractères minimum" required />
+
+          <small>Conseil : utilisez un email valide et un mot de passe d'au moins 6 caractères.</small>
+
           <div class="auth-actions">
             <button type="submit" class="btn primary" data-mode="login">Se connecter</button>
             <button type="submit" class="btn secondary" data-mode="register">Créer un compte</button>
