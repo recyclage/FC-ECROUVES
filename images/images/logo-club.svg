@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Logo club">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a3d91"/>
+      <stop offset="1" stop-color="#cf1f2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" fill="url(#lg)"/>
+  <circle cx="60" cy="60" r="42" fill="#fff" opacity="0.93"/>
+  <text x="60" y="67" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#0a3d91">FCE</text>
+</svg>
