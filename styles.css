@@ -167,6 +167,35 @@ main {
   gap: 0.5rem;
 }
 
+.size-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.size-select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.45rem;
+  background: #fff;
+}
+
+
+.quantity-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.quantity-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.45rem;
+  background: #fff;
+  margin: 0;
+}
+
 .btn {
   border: none;
   border-radius: 8px;
@@ -192,6 +221,12 @@ main {
   color: var(--white);
 }
 
+small {
+  color: #475569;
+  display: block;
+  margin: -0.2rem 0 0.8rem;
+}
+
 input {
   width: 100%;
   padding: 0.6rem;
@@ -204,6 +239,18 @@ input {
   padding-left: 1rem;
 }
 
+.cart-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.45rem;
+}
+
+.remove-item {
+  padding: 0.45rem 0.7rem;
+}
+
 .total {
   font-size: 1.1rem;
   font-weight: 700;
@@ -212,6 +259,26 @@ input {
 .message {
   min-height: 1.2rem;
   font-weight: 600;
+}
+
+
+.partner-logo-wrap {
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.partner-logo {
+  width: min(100%, 420px);
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.partner-hint {
+  color: #475569;
+  font-size: 0.92rem;
+  margin: 0;
 }
 
 footer {
