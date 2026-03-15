@@ -80,6 +80,17 @@ body {
   font-weight: 700;
 }
 
+/* Utiliser cette classe si vous remplacez FCE par une image :
+   <img src="images/votre-logo.png" class="logo-image" ...>
+   => même taille que le logo rond actuel. */
+.logo-image {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
 .icon-link {
   text-decoration: none;
   color: #111;
@@ -123,7 +134,7 @@ body {
 .boutique-hero {
   background:
     linear-gradient(rgba(186, 17, 35, 0.62), rgba(186, 17, 35, 0.62)),
-    url('images/cdf.png') center/cover no-repeat,
+    url('images/boutique-bg.svg') center/cover no-repeat,
     linear-gradient(120deg, var(--blue), #1f5fd1);
 }
 
