@@ -114,6 +114,37 @@ body {
   font-size: 2.1rem;
 }
 
+.boutique-hero h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+
+.boutique-hero {
+  background:
+    linear-gradient(rgba(186, 17, 35, 0.62), rgba(186, 17, 35, 0.62)),
+    url('images/fond.png') center/cover no-repeat,
+    linear-gradient(120deg, var(--blue), #1f5fd1);
+}
+
+.boutique-hero-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: nowrap;
+}
+
+.boutique-club-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.18);
+  vertical-align: middle;
+}
+
 .hero-actions {
   margin-top: 1rem;
   display: flex;
@@ -268,11 +299,21 @@ input {
   gap: 0.55rem;
 }
 
+.partner-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
 .partner-logo {
-  width: min(100%, 420px);
+  width: 100%;
+  max-width: 420px;
   border: 1px solid #d1d5db;
   border-radius: 12px;
   background: #fff;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  padding: 0.35rem;
 }
 
 .partner-hint {
@@ -296,5 +337,14 @@ footer {
     order: 3;
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .boutique-club-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .boutique-hero h1 {
+    font-size: 1.65rem;
   }
 }
